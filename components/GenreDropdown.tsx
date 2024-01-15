@@ -30,7 +30,7 @@ async function GenreDropdown() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="text-white flex justify-center items-center">
+      <DropdownMenuTrigger className="text-[#1a1c29] dark:text-white bg-white/55 dark:bg-transparent p-1.5 rounded-xl flex justify-center items-center">
         Genre <ChevronDown className="ml-1" />
       </DropdownMenuTrigger>
 
