@@ -80,3 +80,22 @@
   -webkit-text-stroke: 0.5px;
   display: inline-block;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  position: fixed;
+  right: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  background-color: #101820;
+  position: relative;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #004a9e;
+  opacity: 0.8;
+  border-radius: 2px;
+  width: 0px;
+}

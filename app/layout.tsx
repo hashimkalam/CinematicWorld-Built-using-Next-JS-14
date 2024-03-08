@@ -4,8 +4,8 @@ import Header from "@/components/ui/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Disney Clone",
-  description: "Educational Purposes",
+  title: "Cinematic World",
+  description: "Personal Project",
 };
 
 export default function RootLayout({

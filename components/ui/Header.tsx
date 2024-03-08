@@ -8,7 +8,7 @@ import GenreDropdown from "../GenreDropdown";
 function Header() {
   return (
     <header className="flex justify-between p-5 sticky top-0 z-20 items-center bg-gradient-to-t from-gray-200/0 via-gray-900/10 dark:via-gray-900/25 to-gray-900/50 dark:to-gray-900 -mt-40 ">
-      <Link href="/" className="mr-10 text-xl">
+      <Link href="/" className="mr-10 text-xl italic">
         {/*<Image
           src="https://links.papareact.com/a943ae"
           alt="Disney Logo"
