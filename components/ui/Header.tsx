@@ -16,7 +16,7 @@ function Header() {
           height={100}
           className="cursor-pointer invert-0 dark:invert" // invert changes the color to the opposite
   />*/}
-        <span className="font-semibold -mr-1 text-with-stroke">C</span> inematic
+        <span className="font-semibold -mr-1 text-with-stroke">C</span>inematic
         <span className="font-semibold text-with-stroke ml-1">W</span>orld
       </Link>
 
