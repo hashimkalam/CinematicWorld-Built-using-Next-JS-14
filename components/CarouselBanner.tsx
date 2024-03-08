@@ -15,7 +15,7 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
   ]);
   return (
     <div
-      className="overflow-hidden lg:-mt-40 relative cursor-pointer"
+      className="overflow-hidden lg:-mt-20 relative cursor-pointer"
       ref={emblaRef}
     >
       <div className="flex">
@@ -29,7 +29,7 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
               height={1080}
             />
 
-            <div className="hidden lg:inline absolute mt-0 top-0 z-20 max-w-xl pt-40 xl:pt-52 left-0 lg:mt-40 bg-transparent  h-full w-full bg-gradient-to-r from-gray-900/50 dark:from-gray-900/90 to-transparent p-10 text-white space-y-5">
+            <div className="hidden lg:inline absolute mt-0 top-0 z-20 max-w-xl pt-40 xl:pt-52 left-0 lg:mt-40 bg-transparent h-full w-full bg-gradient-to-r from-gray-900/50 dark:from-gray-900/90 to-transparent p-10 text-white space-y-5">
               <h2 className="text-5xl font-bold z-50">{movie.title}</h2>
               <p className="max-w-xl line-clamp-5">{movie.overview}</p>
             </div>
