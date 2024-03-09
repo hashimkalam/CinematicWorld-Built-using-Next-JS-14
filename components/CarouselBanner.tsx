@@ -19,10 +19,10 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
       ref={emblaRef}
     >
       <div className="flex">
-        {movies.map((movie) => (
-          <div key={movie.id} className="flex-full min-w-0 relative">
+        {movies.map((movie, index) => (
+          <div key={index} className="flex-full min-w-0 relative">
             <Image
-              key={movie.id}
+              key={index}
               src={getImagePath(movie.backdrop_path, true)}
               alt=""
               width={1920}
