@@ -20,9 +20,9 @@ function MoviesCarousel({ title, movies, isVertical }: Props) {
         )}
       >
         {isVertical
-          ? movies?.map((movie, index) => (
+          ? movies?.map((movie) => (
               <div
-                key={index}
+                key={movie.id}
                 className={cn(
                   isVertical &&
                     "flex flex-col md:flex-row space-y-5 mb-5 items-center space-x-5"

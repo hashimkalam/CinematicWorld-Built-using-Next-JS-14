@@ -15,10 +15,9 @@ type Props = {
 async function GenrePage({ params: { id }, searchParams: { genre } }: Props) {
   const movies = await getDiscoverMovies(id);
 
-  if (!id) {
-    notFound();
-    return null;
-  }
+  if (!id) notFound();
+
+  console.log(id);
 
   return (
     <div className="max-w-7xl mx-auto">

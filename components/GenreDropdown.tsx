@@ -26,8 +26,6 @@ async function GenreDropdown() {
   const response = await fetch(url, options);
   const data = (await response.json()) as Genres;
 
-  console.log(data.genres);
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="text-[#1a1c29] dark:text-white p-1.5 rounded-xl flex justify-center items-center">
@@ -38,13 +36,14 @@ async function GenreDropdown() {
         <DropdownMenuItem> Select Genre</DropdownMenuItem>
         <DropdownMenuSeparator />
 
-        {data.genres.map((genre, index) => (
-          <DropdownMenuItem key={index} className="cursor_pointer">
-            <Link href={`/genre/${index}?genre=${genre.name}`}>
-              {genre.name}
-            </Link>
-          </DropdownMenuItem>
-        ))}
+        {data.genres &&
+          data.genres.map((genre) => (
+            <DropdownMenuItem key={genre.id} className="cursor_pointer">
+              <Link href={`/genre/${genre.id}?genre=${genre.name}`}>
+                {genre.name}
+              </Link>
+            </DropdownMenuItem>
+          ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );
