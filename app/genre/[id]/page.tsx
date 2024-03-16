@@ -15,16 +15,14 @@ type Props = {
 async function GenrePage({ params: { id }, searchParams: { genre } }: Props) {
   const movies = await getDiscoverMovies(id);
 
-  if (!id) notFound();
-
-  console.log(id);
+  if (!id) notFound;
 
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col space-y-5 mt-40 xl:mt-42">
         <h1 className="text-6xl font-bold px-10">Results for {genre}</h1>
 
-        <MoviesCarousel title={`Genre`} movies={movies} isVertical={true} />
+        <MoviesCarousel title={`Genre`} movies={movies} isVertical />
       </div>
     </div>
   );

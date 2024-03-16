@@ -13,7 +13,6 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
   const [emblaRef] = useEmblaCarousel({ loop: true, duration: 100 }, [
     Autoplay(),
   ]);
-
   return (
     <div
       className="overflow-hidden lg:-mt-20 relative cursor-pointer"
@@ -38,7 +37,7 @@ function CarouselBanner({ movies }: { movies: Movie[] }) {
         ))}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-500 via-transparent to-[#a3a3a3] dark:from-gray-200/0 dark:via-gray-900/5 dark:to-[#1A1C29]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-200/0 via-gray-900/25 to-gray-300 dark:to-[#1A1C29]" />
     </div>
   );
 }
