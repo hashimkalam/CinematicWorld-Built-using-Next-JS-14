@@ -24,7 +24,7 @@ async function GenrePage({ params: { id }, searchParams: { genre } }: Props) {
       <div className="flex flex-col space-y-5 mt-40 xl:mt-42">
         <h1 className="text-6xl font-bold px-10">Results for {genre}</h1>
 
-        <MoviesCarousel title={`Genre`} movies={movies} isVertical />
+        <MoviesCarousel title={`Genre`} movies={movies} isVertical={true} />
       </div>
     </div>
   );
